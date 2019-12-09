@@ -9,8 +9,8 @@ function staticLoadPlaces() {
        {
            name: 'MI CASA',
            location: {
-               lat: -2.029596,
-               lng: -79.910390,
+               lat: -2.029292,
+               lng: -79.910325,
            }
        },
    ];
@@ -28,7 +28,7 @@ function renderPlaces(places) {
        model.setAttribute('gltf-model', './assets/duck.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '0.5 0.5 0.5');
+       model.setAttribute('scale', '3.5 3.5 3.5');
 
        model.addEventListener('loaded', () => {
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
